@@ -1,5 +1,6 @@
 @import url(./normalize.css);
 @import url(./reset.css);
+@import url(./fontello.css);
 
 *, *::before, *::after{
   box-sizing: border-box;
@@ -28,7 +29,23 @@ body {
   /* flex는 컨테이너와 자식이 필요하다. auto로 간단하게 해결하자
   과일 자를 때 회칼 꺼낼 필요는 없다. */
   height: 10vh;
+  border-radius: 0 0 15px 15px;
 }
+
+.member{
+  background-color: pink;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+/* .member li::before{
+  content:"\e800";
+  font-family: fontello;
+} */
+/* .member li:nth-child(-n + 3)::before{
+  content:"";
+} */
 
 .visual {
   background: orange;
