@@ -2,9 +2,13 @@
 @import url(./reset.css);
 
 .a11y-hidden{
-  background-color: yellow;
+  background-color: red;
   position: absolute;
-  top: -9999em;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
 }
 
 *, *::before, *::after{
