@@ -5,12 +5,17 @@
   box-sizing: border-box;
 }
 
+html{
+  font-size: 10px;
+}
+
 a{
   color: #000;
   text-decoration: none;
 }
 
 body {
+  font-size: 1.4rem;
   background: #ccc;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   /* 글꼴이 없다면 다음 글꼴을 가져다 쓴다. */
@@ -47,9 +52,11 @@ filter가 있거나
   left: 60px;
 }
 .member{
-  background-color: aqua;
+  /* background-color: aqua; */
   text-align: right;
   padding: 4px 0;
+  /* transform은 reflow 작업이 일어나지 않는다. 모던브라우저만 사용가능하다네 */
+  transform: translate(10px);
 }
 
 .member li{
@@ -58,9 +65,10 @@ filter가 있거나
   /* inline은 inline 블럭 사이에 공백이 생긴다. */
 }
 .member a{
-  background-color: coral;
-  padding: 6px 0;
+  /* background-color: coral; */
+  padding: 6px 10px;
   display: inherit;
+  text-transform: uppercase;
   /* display 상속도 된다. */
 }
 .divider{
