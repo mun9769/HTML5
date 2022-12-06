@@ -1,6 +1,12 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 
+.a11y-hidden{
+  background-color: yellow;
+  position: absolute;
+  top: -9999em;
+}
+
 *, *::before, *::after{
   box-sizing: border-box;
 }
