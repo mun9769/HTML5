@@ -26,7 +26,12 @@ a{
 
 body {
   font-size: 1.4rem;
-  background: #ccc;
+  background:#ccc linear-gradient(to bottom,
+  #ccc 0%,
+  #eee 35%,
+  #efefef 60%,
+  #fff 100%);
+  color: #212121;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   /* 글꼴이 없다면 다음 글꼴을 가져다 쓴다. */
 
@@ -84,6 +89,43 @@ filter가 있거나
 .divider{
   margin-right: 4px;
 }
+.menu{
+  border-top: 2px solid #212121;
+  background: #e85e2c
+    linear-gradient(
+      to bottom,
+      #1e5799 0%,
+      #ef9126 0%,
+      #e85e2c 35%,
+      #e85e2c 70%,
+      #ef9126 100%
+    );
+  border-radius: 0 0 5px 5px;
+  padding-left: 230px;
+  height: 47px;
+}
+
+.menu-item{
+  background-color: aqua;
+  float: left;
+}
+
+.menu-button{
+  border: 0;
+  border-left: 2px solid blue;
+  background: transparent;
+  padding: 0 23px;
+  line-height: 45px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 0 #000;
+}
+.sub-menu{
+  position: absolute;
+  /* 반응형 만들때 absolute는 만들기 힘들지 않나? */
+  display: none;
+}
 
 .visual {
   background: orange;
@@ -124,7 +166,11 @@ filter가 있거나
 }
 
 .footer {
-  background: gray;
+  background: #ccc linear-gradient(to bottom,
+  #ccc 0%,
+  #eee 35%,
+  #efefef 60%,
+  #fff 100%);
 }
 
 .footer-inner {
