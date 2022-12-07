@@ -1,5 +1,6 @@
 @import url(./normalize.css);
 @import url(./reset.css);
+@import url(./fonts.css);
 
 .a11y-hidden{
   background-color: red;
@@ -65,6 +66,7 @@ filter가 있거나
   position: absolute;
   top: 45px;
   left: 60px;
+  z-index: 10;
 }
 .member{
   /* background-color: aqua; */
@@ -103,10 +105,34 @@ filter가 있거나
   border-radius: 0 0 5px 5px;
   padding-left: 230px;
   height: 47px;
+  position: relative;
+}
+
+.menu > li:nth-child(-n + 3){
+  position: relative;
+}
+
+.menu-item{
+  float: left;
+  border-left: 2px solid #fff;
+}
+
+.menu-html, .menu-css, .menu-standards{
+  left: 0;
+}
+.menu-accessibility,
+.menu-qna,
+.menu-archive{
+  right: 0;
 }
 
 .menu-item{
   background-color: aqua;
+  float: left;
+  position: relative;
+}
+
+.menu li{
   float: left;
 }
 
@@ -114,7 +140,7 @@ filter가 있거나
   border: 0;
   border-left: 2px solid blue;
   background: transparent;
-  padding: 0 23px;
+  padding: 0 22px;
   line-height: 45px;
   font-size: 15px;
   font-weight: 700;
@@ -136,6 +162,26 @@ filter가 있거나
   position: absolute;
   /* 반응형 만들때 absolute는 만들기 힘들지 않나? */
   display: none;
+  background-color: pink;
+}
+
+.sub-menu li{
+  display: inline-block;
+}
+
+.sub-menu a::before{
+  content: "\e802";
+  font-family: 'fontello';
+}
+
+/* focus는 버튼에 tab가 올라갈때 동작한다. */
+.sub-menu a:hover::before, .sub-menu a:focus::before{
+  content: "\e801";
+}
+
+.is-active .sub-menu{
+  display: block;
+  white-space: nowrap;
 }
 
 .visual {
