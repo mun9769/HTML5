@@ -121,6 +121,17 @@ filter가 있거나
   color: #fff;
   text-shadow: 1px 1px 0 #000;
 }
+
+.is-active .menu-button{
+  color: yellow;
+}
+.is-active .menu-button::after{
+  content: '';
+  display: block;
+  border-bottom: 2px solid #000;
+}
+
+
 .sub-menu{
   position: absolute;
   /* 반응형 만들때 absolute는 만들기 힘들지 않나? */
