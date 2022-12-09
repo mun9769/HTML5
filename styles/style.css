@@ -242,11 +242,11 @@ filter가 있거나
 }
 
 .main {
-  background: lightgreen;
+  background: #fff;
   height: 50vh;
   display: flow-root;
   /* overflow: hidden; */
-  padding: 0 15px;
+  padding: 30px 15px;
 }
 
 .group{
@@ -267,6 +267,82 @@ filter가 있거나
   height: 100px;
 }
 
+/* 로그인 */
+.login{
+  box-shadow: 5px 5px 0 0 #ccc;
+  background: orange radial-gradient(circle at right top, orange, orangered);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.login-title{
+  color: #ff0;
+  font-size: 15px;
+  font-weight: 700;
+  text-indent: 10px;
+  /* margin이랑 비슷하다 indent: 들여쓰기 */
+}
+
+.login-form{
+  margin-top: 10px;
+  padding: 10px 10px 0 10px;
+  border-top-left-radius: 15px 15px;
+  border-top-right-radius: 15px 15px;
+  background-color: #fff;
+}
+.sign{
+  padding: 10px;
+  padding: 0 4px;
+  background-color: #fff;
+  border-bottom-left-radius: 15px 15px;
+  border-bottom-right-radius: 15px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sign a{
+  padding: 6px 0;
+  letter-spacing: -0.01em;
+}
+.sign a::before{
+  content:'\e800  ';
+  font-family: 'fontello';
+}
+.sign li{
+  padding: 8px 4px;
+  font-size: .9em;
+}
+.login-form label{
+  display: inline-block;
+  width: 4em;
+}
+.login-form input{
+  width: 100px;
+  height: 24px;
+  border: 1px solid #aaa;
+  padding: 1px 1px 1px 5px;
+  border-radius: 3px;
+}
+.login-form fieldset{
+  position: relative;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 5px;
+}
+.user-email, .user-pw{
+  margin-bottom: 5px;
+}
+.login-button{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 52px;
+  background-color: orangered;
+  border: 0;
+  color: #fff;
+  padding: 0 7px;
+  border-radius: 4px;
+}
 
 .slogan {
   background: skyblue;
