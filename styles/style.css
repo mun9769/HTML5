@@ -249,12 +249,20 @@ filter가 있거나
   padding: 30px 15px;
 }
 
+.validation-list{
+  background-color: yellow;
+  margin-top: 25px;
+}
+
+.validation-list li{
+  background-color: pink;
+  margin: 10px;
+}
 .group{
   margin: 0 15px;
   float: left;
 }
 .group1{
-  background-color: violet;
   width: 250px;
 }
 .group2{
